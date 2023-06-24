@@ -891,3 +891,118 @@ table > tbody > tr > * {
   padding: 0 var(--grouped-element-spacing);
   height: 14px;
 }
+
+.shadow-border-bottom-right {
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.shadow-border-top-left {
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.shadow-bottom-right {
+  box-shadow: 1px 1px 0 black;
+}
+
+.title-bar + .menu-bar-group {
+  margin: 0;
+  padding: 0;
+  margin-top: 1px;
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.menu-bar-group > .menu-bar,
+.title-bar + .menu-bar {
+  display: flex;
+  margin: 0;
+  padding: 2px;
+  height: 18px;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.menu-bar > .menu-bar-bump {
+  margin: 0 5px 0 0;
+  width: 1px;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.menu-bar .menu-item {
+  display: flex;
+  height: 100%;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  font-size: 11px;
+  padding: 0 8px 0 8px;
+  align-self: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu-bar .menu-item:hover {
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.menu-bar .menu-item:focus {
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.menu-item .menu-dropdown {
+  background-color: var(--surface);
+  position: absolute;
+  width: 120px;
+  top: calc(100% + 2px);
+  left: 0;
+  max-height: 0px;
+  overflow: hidden;
+  border: none;
+  box-shadow: none;
+}
+
+.menu-item:focus .menu-dropdown {
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  box-shadow: 1px 1px 0 black;
+  max-height: 1000px;
+  transition: max-height 0.5s linear;
+}
+
+.menu-dropdown .dropdown-item {
+  padding: 5px 0 5px 20px;
+}
+
+.menu-dropdown .dropdown-item:hover {
+  color: #fff;
+  background-color: #0000a8;
+}
+
+.menu-dropdown .dropdown-item[disabled] {
+  color: #87888f;
+}
+
+.menu-dropdown > .section-divider {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid #fff;
+  margin: 3px 2px 3px 2px;
+}
